@@ -43,7 +43,7 @@ namespace SignalManager.Context
             {
                 if (_localContext == null)
                 {
-                    _localContext = this.Create();
+                    _localContext = Create();
                 }
                 return _localContext;
             }

@@ -88,6 +88,14 @@ namespace SignalManager.Forms
                 {
                     _settingsProxy.SelectedListId = (listComboBox.SelectedItem as PointListProxy).Id;
                 }
+                else
+                {
+                    PointListProxy pointListProxy = new PointListProxy()
+                    {
+                        Name = "List1"
+                    };
+                    _settingsProxy.SelectedListId = PointListAdapter.SaveItem(pointListProxy).PointListId;
+                }
                 _settingsProxy.ControlType = (int)controlTypeComboBox.SelectedItem;
                 _settingsProxy.DisplayTime = Convert.ToInt32(displayTimeNumeric.Value);
                 _settingsProxy.Interval = Convert.ToInt32(intervalNumeric.Value);

@@ -204,7 +204,7 @@
             // 
             // ColorButton
             // 
-            this.ColorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ColorButton.BackColor = System.Drawing.Color.Black;
             this.ColorButton.Location = new System.Drawing.Point(195, 112);
             this.ColorButton.Name = "ColorButton";
             this.ColorButton.Size = new System.Drawing.Size(40, 32);
@@ -259,6 +259,11 @@
             this.intervalNumeric.Name = "intervalNumeric";
             this.intervalNumeric.Size = new System.Drawing.Size(110, 33);
             this.intervalNumeric.TabIndex = 7;
+            this.intervalNumeric.Value = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             // 
             // displayTimeNumeric
             // 
@@ -277,6 +282,11 @@
             this.displayTimeNumeric.Name = "displayTimeNumeric";
             this.displayTimeNumeric.Size = new System.Drawing.Size(110, 33);
             this.displayTimeNumeric.TabIndex = 7;
+            this.displayTimeNumeric.Value = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             // 
             // label4
             // 
